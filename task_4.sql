@@ -12,11 +12,7 @@ try:
 
     # Query column details from INFORMATION_SCHEMA
     query = """
-    SELECT COLUMN_NAME, COLUMN_TYPE, IS_NULLABLE, COLUMN_KEY, COLUMN_DEFAULT, EXTRA
-    FROM INFORMATION_SCHEMA.COLUMNS
-    WHERE TABLE_SCHEMA = %s
-      AND TABLE_NAME = 'books'
-    ORDER BY ORDINAL_POSITION;
+    SHOW COLUMNS FROM books;
     """
     cursor.execute("USE alx_book_store;")
     cursor.execute(query)
