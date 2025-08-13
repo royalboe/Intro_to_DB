@@ -1,10 +1,10 @@
-import mysql.connector as connector
+import mysql.connector
 from mysql.connector import Error
 
 
 
 try:
-    connection = connector.connect(
+    connection = mysql.connector.connect(
     host="localhost",
     port="3306",
     user="root",
