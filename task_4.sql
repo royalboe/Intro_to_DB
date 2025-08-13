@@ -18,7 +18,7 @@ try:
       AND TABLE_NAME = 'books'
     ORDER BY ORDINAL_POSITION;
     """
-    cursor.executre("USE alx_book_store;")
+    cursor.execute("USE alx_book_store;")
     cursor.execute(query)
     results = cursor.fetchall()
 
